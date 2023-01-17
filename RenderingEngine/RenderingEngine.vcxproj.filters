@@ -194,6 +194,9 @@
     <ClCompile Include="Core\Data\Texture.cpp">
       <Filter>Core\Data</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Data\TextureData.cpp">
+      <Filter>Core\Data</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Data\UV.cpp">
       <Filter>Core\Data</Filter>
     </ClCompile>
@@ -260,13 +263,13 @@
     <ClCompile Include="Scene\CommonOverlay\CommonOverlay.cpp">
       <Filter>Scene\CommonOverlay</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\Scenario_3.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
     <ClCompile Include="Scene\Scenario_1.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="Scene\Scenario_2.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenario_3.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />

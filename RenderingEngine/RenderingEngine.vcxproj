@@ -151,6 +151,7 @@ xcopy /Q /E /Y /I "..\Assets" "..\RenderingEngine\Assets"</Command>
     <ClCompile Include="Core\Component\TransformComponent.cpp" />
     <ClCompile Include="Core\Data\Mesh.cpp" />
     <ClCompile Include="Core\Data\Texture.cpp" />
+    <ClCompile Include="Core\Data\TextureData.cpp" />
     <ClCompile Include="Core\Data\UV.cpp" />
     <ClCompile Include="Core\Event\ApplicationEvents\ApplicationEvents.cpp" />
     <ClCompile Include="Core\Event\Event.cpp" />
@@ -173,9 +174,9 @@ xcopy /Q /E /Y /I "..\Assets" "..\RenderingEngine\Assets"</Command>
     <ClCompile Include="Core\Window\API\WindowGLFW.cpp" />
     <ClCompile Include="Core\Window\Window.cpp" />
     <ClCompile Include="Scene\CommonOverlay\CommonOverlay.cpp" />
-    <ClCompile Include="Scene\Scenario_3.cpp" />
     <ClCompile Include="Scene\Scenario_1.cpp" />
     <ClCompile Include="Scene\Scenario_2.cpp" />
+    <ClCompile Include="Scene\Scenario_3.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

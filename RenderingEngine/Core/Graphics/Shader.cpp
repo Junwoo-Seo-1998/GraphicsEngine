@@ -144,22 +144,7 @@ void Shader::SetTexture(const std::string& name, std::shared_ptr<Texture> textur
 		std::cout << "error on shader location! - " << name << std::endl;
 		return;
 	}
-	texture->Bind(unit);
-	glUniform1i(location, unit);
-}
-
-void Shader::SetFrameBufferColorTexture(const std::string& name, std::shared_ptr<FrameBuffer> texture, unsigned unit)
-{
-	Use();
-	GLint location = glGetUniformLocation(m_ShaderProgram, name.c_str());
-	if (location == -1)
-	{
-		std::cout << "error on shader location! - " << name << std::endl;
-		return;
-	}
-	uint32_t textureID = texture->GetColorTexture(0);
-	glActiveTexture(GL_TEXTURE0 + unit);
-	glBindTexture(GL_TEXTURE_2D, textureID);
+	texture->BindTexture(unit);
 	glUniform1i(location, unit);
 }
 
